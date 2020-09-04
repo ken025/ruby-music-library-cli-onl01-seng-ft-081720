@@ -6,6 +6,9 @@ def initialize(path='./db/mp3s')
 end 
 
 def call 
+  input = gets.chomp
+    if input != "exit"
+      
      puts "Welcome to your music library!"
      puts "To list all of your songs, enter 'list songs'."
      puts "To list all of the artists in your library, enter 'list artists'."
@@ -30,10 +33,6 @@ def call
          when "play song"
            play_song
          end
-    input = gets.chomp
-    if input != "exit"
-      
-      call
   end 
 end 
 
